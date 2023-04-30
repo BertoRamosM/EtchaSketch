@@ -1,0 +1,94 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+.images{
+    display: flex;
+    gap: 400px;
+    padding-top: 30px;
+    
+}
+
+.samurai{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+.zelda{
+    width: 200px;
+    height: 200px;;
+    padding-bottom: 30px;
+}
+
+
+.images > h1{
+    color: whitesmoke;
+    font-size: 68px;
+    font-weight: bolder;
+}
+
+.mainContainer{
+    display: flex;
+}
+.gridContainer{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    padding-right: 250px;
+    padding-bottom: 100px;
+  
+}
+
+.gridCells{
+    border: thin solid grey;
+    
+}
+
+
+.buttons{
+    padding-top: 30px;
+    padding-right: 150px;
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.buttons > *{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+.clear{
+    background-color: green;
+}
+
+.gridSize{
+    background-color: rgb(38, 0, 255);
+    width: 90px;
+}
+
+
+.colorSel{
+    background-color: whitesmoke;
+    border-radius: 90%;
+
+   
+}
+
+.rainbow{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
