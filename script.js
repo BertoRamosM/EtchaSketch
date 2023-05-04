@@ -102,7 +102,7 @@ colorSelector();
 
 
 
-
+//rainbow mode
 let randColor = () => {
     let hexColor = Math.floor(Math.random() * 16777213).toString(16);
     return `#${hexColor}`;
@@ -112,16 +112,60 @@ randColor();
 
 function getRainbow(){
     const rainbowColor = document.querySelector('.rainbow');
+    const gridCells = document.querySelectorAll('.gridCells');
     rainbowColor.addEventListener('click',()=>{
-    chooseColor = randColor;
-})}
+    gridCells.forEach(cell=>{
+        cell.style.backgroundColor = randColor();
+    
+    })
+    })
+
+
+        }
+    
+
 
 getRainbow();
 
 
+function bordersRemover(){
+    let border = false;
+    const gridCells =  document.querySelectorAll('.gridCells');
+    let borders = document.querySelector('.gridBorder');
+    borders.addEventListener('click',()=>{
+        border = !border;
+        if(border === true){
+            gridCells.forEach(cell =>{
+                cell.style.border = "none";
+            });
+        }else if(border === false){
+                gridCells.forEach(cell=>{
+                    cell.style.border = "thin solid grey";
+            })}
+        })
+        }
+            bordersRemover();
 
 
-}
+
+
+
+        function eraseSingle(){
+            const grid = document.querySelectorAll('.gridCells');
+            grid.forEach(cell =>{
+            cell.addEventListener('dblclick',()=>{
+                    cell.style.backgroundColor = 'black';
+                })
+            })
+        }
+
+        eraseSingle();
+
+        }
+    
+
+
+
 
 
 

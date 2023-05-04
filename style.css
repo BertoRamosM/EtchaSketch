@@ -10,6 +10,8 @@ body{
   
 }
 
+
+
 .images{
     display: flex;
     gap: 400px;
@@ -38,11 +40,13 @@ body{
 
 .logSize{
     color: aliceblue;
+    padding-left: 50px;
+    padding-bottom: 25++px;
 }
 
 .mainContainer{
     display: flex;
-    padding-right: 120px;
+    padding-right: 75px;
 }
 .gridContainer{
     width: 600px;
@@ -59,14 +63,16 @@ body{
    
 }
 
-
+.gridBorder{
+    background-color: grey;
+}
 
 
 .buttons{
-    padding-top: 30px;
+    padding-top: 10px;
     padding-right: 150px;
     display: flex;
-    gap: 50px;
+    gap: 25px;
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
@@ -112,13 +118,10 @@ body{
 }
 
 .sizeRange{
-    margin-top: 85px;
+    margin-top: 50px;
 }
 
 .colorPalet{
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
-.rainbowText{
-    margin-top: 70px;
-}
